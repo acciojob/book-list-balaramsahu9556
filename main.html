@@ -11,26 +11,29 @@
 	<h1>MyBookList</h1>
 	<div class="form-group">
 		<label for="title">Title</label><br>
-		<input type="text" id="title" name="title">
-	</div>
-	<div class="form-group">
+		<input type="text" id="title" name="title"><br>
+	
 		<label for="Author">Author</label><br>
-		<input type="text" id="author" name="author">
-	</div>
-	<div class="form-group">
-		<label for="book-list">ISBN#</label><br>
-		<input type="text" id="book-list" name="book-list">
-	</div>
-	<div class="form-group">
+		<input type="text" id="author" name="author"><br>
+	
+	
+		<label for="isbn">ISBN#</label><br>
+		<input type="text" id="isbn" name="isbn"><br>
+
 		<button value="addbook" style="background-color: blue; color:white">Add Book</button>
 	</div>
 	<div>
-		<table class=table table-striped>
-			<tr>
-				<th>Title</th>
-				<th>Author</th>
-				<th>ISBN#</th>
-			</tr>
+		<table class="table-striped">
+			<thead>
+				<tr>
+					<th>Title</th>
+					<th>Author</th>
+					<th>ISBN#</th>
+				</tr>
+			</thead>
+			<tbody id="book-list">
+				
+			</tbody>
 		</table>
 	</div>
     <script type="text/javascript" src="./script.js">
